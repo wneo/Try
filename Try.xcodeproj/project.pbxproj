@@ -13,6 +13,8 @@
 		B55B022A18EE76DD00467438 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B022418EE76DD00467438 /* GameScene.m */; };
 		B55B022B18EE76DD00467438 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B022618EE76DD00467438 /* StartScene.m */; };
 		B55B022C18EE76DD00467438 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B022618EE76DD00467438 /* StartScene.m */; };
+		B55B023118EE94E100467438 /* WYProgressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023018EE94E100467438 /* WYProgressNode.m */; };
+		B55B023218EE94E100467438 /* WYProgressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023018EE94E100467438 /* WYProgressNode.m */; };
 		B59FB18718D19A6B004BB6B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18618D19A6B004BB6B5 /* Foundation.framework */; };
 		B59FB18918D19A6B004BB6B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */; };
 		B59FB18B18D19A6B004BB6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18A18D19A6B004BB6B5 /* UIKit.framework */; };
@@ -48,6 +50,8 @@
 		B55B022418EE76DD00467438 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		B55B022518EE76DD00467438 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
 		B55B022618EE76DD00467438 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		B55B022F18EE94E100467438 /* WYProgressNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYProgressNode.h; sourceTree = "<group>"; };
+		B55B023018EE94E100467438 /* WYProgressNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYProgressNode.m; sourceTree = "<group>"; };
 		B59FB18318D19A6B004BB6B5 /* Try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Try.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59FB18618D19A6B004BB6B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +113,23 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		B55B022D18EE94C800467438 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B55B022E18EE94C800467438 /* UI */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B55B022E18EE94C800467438 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B55B022F18EE94E100467438 /* WYProgressNode.h */,
+				B55B023018EE94E100467438 /* WYProgressNode.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		B59FB17A18D19A6A004BB6B5 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +164,7 @@
 		B59FB18C18D19A6B004BB6B5 /* Try */ = {
 			isa = PBXGroup;
 			children = (
+				B55B022D18EE94C800467438 /* Components */,
 				B55B022018EE76DD00467438 /* Scenes */,
 				B59FB19518D19A6B004BB6B5 /* TryAppDelegate.h */,
 				B59FB19618D19A6B004BB6B5 /* TryAppDelegate.m */,
@@ -283,6 +305,7 @@
 			files = (
 				B59FB19D18D19A6B004BB6B5 /* TryViewController.m in Sources */,
 				B55B022B18EE76DD00467438 /* StartScene.m in Sources */,
+				B55B023118EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB19718D19A6B004BB6B5 /* TryAppDelegate.m in Sources */,
 				B55B022918EE76DD00467438 /* GameScene.m in Sources */,
 				B59FB19318D19A6B004BB6B5 /* main.m in Sources */,
@@ -294,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55B023218EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB1B218D19A6B004BB6B5 /* TryTests.m in Sources */,
 				B55B022A18EE76DD00467438 /* GameScene.m in Sources */,
 				B55B022818EE76DD00467438 /* BaseScene.m in Sources */,
