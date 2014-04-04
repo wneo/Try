@@ -15,6 +15,10 @@
 		B55B022C18EE76DD00467438 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B022618EE76DD00467438 /* StartScene.m */; };
 		B55B023118EE94E100467438 /* WYProgressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023018EE94E100467438 /* WYProgressNode.m */; };
 		B55B023218EE94E100467438 /* WYProgressNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023018EE94E100467438 /* WYProgressNode.m */; };
+		B55B023518EECB2000467438 /* WYBaseSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023418EECB2000467438 /* WYBaseSpriteNode.m */; };
+		B55B023618EECB2000467438 /* WYBaseSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023418EECB2000467438 /* WYBaseSpriteNode.m */; };
+		B55B023918EECD7D00467438 /* WYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023818EECD7D00467438 /* WYObject.m */; };
+		B55B023A18EECD7D00467438 /* WYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023818EECD7D00467438 /* WYObject.m */; };
 		B59FB18718D19A6B004BB6B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18618D19A6B004BB6B5 /* Foundation.framework */; };
 		B59FB18918D19A6B004BB6B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */; };
 		B59FB18B18D19A6B004BB6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18A18D19A6B004BB6B5 /* UIKit.framework */; };
@@ -52,6 +56,10 @@
 		B55B022618EE76DD00467438 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
 		B55B022F18EE94E100467438 /* WYProgressNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYProgressNode.h; sourceTree = "<group>"; };
 		B55B023018EE94E100467438 /* WYProgressNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYProgressNode.m; sourceTree = "<group>"; };
+		B55B023318EECB2000467438 /* WYBaseSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYBaseSpriteNode.h; sourceTree = "<group>"; };
+		B55B023418EECB2000467438 /* WYBaseSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYBaseSpriteNode.m; sourceTree = "<group>"; };
+		B55B023718EECD7D00467438 /* WYObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYObject.h; sourceTree = "<group>"; };
+		B55B023818EECD7D00467438 /* WYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYObject.m; sourceTree = "<group>"; };
 		B59FB18318D19A6B004BB6B5 /* Try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Try.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59FB18618D19A6B004BB6B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +134,10 @@
 			children = (
 				B55B022F18EE94E100467438 /* WYProgressNode.h */,
 				B55B023018EE94E100467438 /* WYProgressNode.m */,
+				B55B023318EECB2000467438 /* WYBaseSpriteNode.h */,
+				B55B023418EECB2000467438 /* WYBaseSpriteNode.m */,
+				B55B023718EECD7D00467438 /* WYObject.h */,
+				B55B023818EECD7D00467438 /* WYObject.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -308,6 +320,8 @@
 				B55B023118EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB19718D19A6B004BB6B5 /* TryAppDelegate.m in Sources */,
 				B55B022918EE76DD00467438 /* GameScene.m in Sources */,
+				B55B023918EECD7D00467438 /* WYObject.m in Sources */,
+				B55B023518EECB2000467438 /* WYBaseSpriteNode.m in Sources */,
 				B59FB19318D19A6B004BB6B5 /* main.m in Sources */,
 				B55B022718EE76DD00467438 /* BaseScene.m in Sources */,
 			);
@@ -317,11 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55B023A18EECD7D00467438 /* WYObject.m in Sources */,
 				B55B023218EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB1B218D19A6B004BB6B5 /* TryTests.m in Sources */,
 				B55B022A18EE76DD00467438 /* GameScene.m in Sources */,
 				B55B022818EE76DD00467438 /* BaseScene.m in Sources */,
 				B55B022C18EE76DD00467438 /* StartScene.m in Sources */,
+				B55B023618EECB2000467438 /* WYBaseSpriteNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

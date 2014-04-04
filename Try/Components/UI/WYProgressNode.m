@@ -6,7 +6,9 @@
 //
 //
 
+
 #import "WYProgressNode.h"
+
 @interface WYProgressNode ()
 @property (nonatomic, strong) SKSpriteNode *maskNode;
 @end
