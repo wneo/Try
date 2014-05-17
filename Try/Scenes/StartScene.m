@@ -8,6 +8,8 @@
 
 #import "StartScene.h"
 #import "WYProgressNode.h"
+#import "WYObject.h"
+#import "WYObject+Test.h"
 
 @interface StartScene ()
 @property (nonatomic, strong) SKSpriteNode *background;
@@ -34,6 +36,12 @@
 			((WYProgressNode *)node).progress = elapsedTime/4;
 		}]];
 		
+		
+		
+		//test
+		[WYObject testClass];
+		WYObject *obj = [WYObject copyFromAtomicName:@"testInitAtom"];
+		[self addChild:obj];
 	}
 	return self;
 }

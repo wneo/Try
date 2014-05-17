@@ -10,4 +10,12 @@
 
 @interface WYObject : WYBaseSpriteNode
 
+//atomic
+@property (nonatomic) BOOL isAtomic;
+
++ (void)loadAtomicObjectWithConfig:(NSDictionary *)configDict;
+
+//instance
++ (instancetype)copyFromAtomicName:(NSString *)name;
+
 @end

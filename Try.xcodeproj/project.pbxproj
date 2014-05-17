@@ -19,6 +19,10 @@
 		B55B023618EECB2000467438 /* WYBaseSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023418EECB2000467438 /* WYBaseSpriteNode.m */; };
 		B55B023918EECD7D00467438 /* WYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023818EECD7D00467438 /* WYObject.m */; };
 		B55B023A18EECD7D00467438 /* WYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B023818EECD7D00467438 /* WYObject.m */; };
+		B5711AA3192242280091FF0E /* WYObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B5711AA2192242280091FF0E /* WYObject+Test.m */; };
+		B5711AA4192242280091FF0E /* WYObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B5711AA2192242280091FF0E /* WYObject+Test.m */; };
+		B5711AA8192304520091FF0E /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B5711AA7192304520091FF0E /* Helper.m */; };
+		B5711AA9192304520091FF0E /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B5711AA7192304520091FF0E /* Helper.m */; };
 		B59FB18718D19A6B004BB6B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18618D19A6B004BB6B5 /* Foundation.framework */; };
 		B59FB18918D19A6B004BB6B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */; };
 		B59FB18B18D19A6B004BB6B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FB18A18D19A6B004BB6B5 /* UIKit.framework */; };
@@ -60,6 +64,10 @@
 		B55B023418EECB2000467438 /* WYBaseSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYBaseSpriteNode.m; sourceTree = "<group>"; };
 		B55B023718EECD7D00467438 /* WYObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYObject.h; sourceTree = "<group>"; };
 		B55B023818EECD7D00467438 /* WYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYObject.m; sourceTree = "<group>"; };
+		B5711AA1192242280091FF0E /* WYObject+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WYObject+Test.h"; sourceTree = "<group>"; };
+		B5711AA2192242280091FF0E /* WYObject+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WYObject+Test.m"; sourceTree = "<group>"; };
+		B5711AA6192304520091FF0E /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		B5711AA7192304520091FF0E /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		B59FB18318D19A6B004BB6B5 /* Try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Try.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59FB18618D19A6B004BB6B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B59FB18818D19A6B004BB6B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,8 +146,19 @@
 				B55B023418EECB2000467438 /* WYBaseSpriteNode.m */,
 				B55B023718EECD7D00467438 /* WYObject.h */,
 				B55B023818EECD7D00467438 /* WYObject.m */,
+				B5711AA1192242280091FF0E /* WYObject+Test.h */,
+				B5711AA2192242280091FF0E /* WYObject+Test.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		B5711AA5192304140091FF0E /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				B5711AA6192304520091FF0E /* Helper.h */,
+				B5711AA7192304520091FF0E /* Helper.m */,
+			);
+			path = Helps;
 			sourceTree = "<group>";
 		};
 		B59FB17A18D19A6A004BB6B5 = {
@@ -176,6 +195,7 @@
 		B59FB18C18D19A6B004BB6B5 /* Try */ = {
 			isa = PBXGroup;
 			children = (
+				B5711AA5192304140091FF0E /* Helps */,
 				B55B022D18EE94C800467438 /* Components */,
 				B55B022018EE76DD00467438 /* Scenes */,
 				B59FB19518D19A6B004BB6B5 /* TryAppDelegate.h */,
@@ -317,11 +337,13 @@
 			files = (
 				B59FB19D18D19A6B004BB6B5 /* TryViewController.m in Sources */,
 				B55B022B18EE76DD00467438 /* StartScene.m in Sources */,
+				B5711AA3192242280091FF0E /* WYObject+Test.m in Sources */,
 				B55B023118EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB19718D19A6B004BB6B5 /* TryAppDelegate.m in Sources */,
 				B55B022918EE76DD00467438 /* GameScene.m in Sources */,
 				B55B023918EECD7D00467438 /* WYObject.m in Sources */,
 				B55B023518EECB2000467438 /* WYBaseSpriteNode.m in Sources */,
+				B5711AA8192304520091FF0E /* Helper.m in Sources */,
 				B59FB19318D19A6B004BB6B5 /* main.m in Sources */,
 				B55B022718EE76DD00467438 /* BaseScene.m in Sources */,
 			);
@@ -335,8 +357,10 @@
 				B55B023218EE94E100467438 /* WYProgressNode.m in Sources */,
 				B59FB1B218D19A6B004BB6B5 /* TryTests.m in Sources */,
 				B55B022A18EE76DD00467438 /* GameScene.m in Sources */,
+				B5711AA4192242280091FF0E /* WYObject+Test.m in Sources */,
 				B55B022818EE76DD00467438 /* BaseScene.m in Sources */,
 				B55B022C18EE76DD00467438 /* StartScene.m in Sources */,
+				B5711AA9192304520091FF0E /* Helper.m in Sources */,
 				B55B023618EECB2000467438 /* WYBaseSpriteNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
